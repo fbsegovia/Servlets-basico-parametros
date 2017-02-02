@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Bienvenidos la registro de usuarios</h1>
+	<form action="RegistroServlet" method="get">
+		Email: <input type="email" name="email"/><br/>
+		Password: <input type="password" name="password"/><br/>
+		<p>Intereses</p>
+		Cine:<input type="checkbox" name="intereses" value="0"><!-- Al ir dentro de un ENUM se le asigna un valor numerico -->
+		Videojuegos:<input type="checkbox" name="intereses" value="1"/>
+		Libros:<input type="checkbox" name="intereses" value="2"/>
+		<p>Sexo</p>
+		Hombre<input type="radio" name="sexo" value="0"/>
+		Mujer<input type="radio" name="sexo" value="1"/>
+		<br/><br/>
+		<input type="submit" value="Registro"/>
+	</form>
+</body>
+</html>
